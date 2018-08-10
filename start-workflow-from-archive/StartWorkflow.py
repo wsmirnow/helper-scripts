@@ -3,8 +3,9 @@ import requests
 import sys
 from requests.auth import HTTPDigestAuth
 
-SERVER_URL = "https://stable.opencast.org"
-DIGEST_USER_NAME = "opencast_system_account"
+SERVER_URL = "https://oc-vp-admin01.ethz.ch"
+DIGEST_USER_NAME = "matterhorn_system_account"
+# grep "digest.pass" /etc/opencast/custom.properties | cut -d"=" -f2
 DIGEST_PASSWORD = "CHANGE_ME"
 
 

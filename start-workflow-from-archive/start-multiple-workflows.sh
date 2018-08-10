@@ -2,8 +2,9 @@
 
 set -e
 
-RUN_WORKFLOWS_AT_ONCE=10
-WAIT_SEC_IN_BETWEEN=60
+RUN_WORKFLOWS_AT_ONCE=50
+WAIT_SEC_IN_BETWEEN=0
+export REQUESTS_CA_BUNDLE="/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem"
 
 print_help() {
     echo "usage: $0 -w WORKFLOW [-W PROPERTIES] [-o OPENCAST] [-u USER] [-p PASSWORD] [-h]
